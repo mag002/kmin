@@ -1,0 +1,396 @@
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css); */
+
+@font-face {
+    font-family: UTM;
+    src: url(../font/UTMAvo.ttf);
+}
+@font-face {
+    font-family: UTM_Bold;
+    src: url(../font/UTM\ AvoBold.ttf);
+}
+@font-face {
+    font-family: UTM_Italic;
+    src: url(../font/UTM\ AvoBold_Italic.ttf);
+}
+@font-face {
+    font-family: UTM_Bold_Italic;
+    src: url(../font/UTM\ AvoBold_Italic.ttf);
+}
+*{
+    box-sizing: border-box;
+    font-family:UTM;
+    margin:0px;
+}
+.p-0{
+    padding:0px;
+}
+.p-l-0{
+    padding-left:0px;
+}
+.p-r-0{
+    padding-right:0px;
+}
+.freecourse{
+    width:100%;
+    /* height: 1600px; */
+    margin-bottom:200px;
+    margin-top:80px;
+}
+.freecourse .header{
+ 
+    height: 200px;
+    /* min-height: 200px; */
+    width: 100%;
+    background-image: url(../img/pexels-photo-710743.jpeg);
+    background-position: 0px -195px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+
+}
+.freecourse .header h2{
+    margin-left:80px;
+    margin-bottom:15px;
+
+}
+.freecourse .header p{
+    margin-left:160px;  
+    width:35%;
+    font-size:12px;
+
+}
+.blur{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+    padding-top:40px;
+}
+.freecourse .row .col-md-8{
+    padding: 50px 30px 50px 20px;
+    /* background-color: lightgrey; */
+    
+}
+.freecourse .row .col-md-4{
+    padding: 50px 40px;
+    padding-top: 154px;
+    /* background-color: lightcoral; */
+}
+.col-md-4 .blur{
+    height: 500px;
+}
+.video{
+  
+    /* height: 700px;
+    width:895px; */
+    /* background-color: black; */
+    width: 100%;
+    height: auto;
+    padding: 0px 5px;
+    margin-bottom:45px;
+}
+.video-title{
+    display:block;
+
+}
+
+.video-youtube{
+    /* height: 491px;
+    width:870px; */
+    width: 100%;
+    height: 360px;
+    background-color: red;
+    
+    
+}
+.freecourse .video .date{
+    display:inline-block;
+    padding:2px 10px;
+    /* width:150px; */
+    height: 28px;
+    background-color: #6666ff;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    margin:20px 0px;
+}
+.freecourse .video .user{
+    margin-left:40px;
+}
+iframe{
+    border:none;
+    width:100%;
+    height: 100%;
+}
+
+
+
+
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators span {
+    /* background: #a3a3a3; */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    display: inline-block;
+    margin: 0px 10px;
+    background-color: #6699ff;
+    border:1.5px solid #6699ff;
+}
+
+.blog .carousel-indicators .active {
+    background: white;
+}
+.blog{
+    width:100%;
+}
+
+.freecourse  .carousel-control-prev i,.freecourse  .carousel-control-next i{
+    color: black;
+    font-size: 35px;
+}
+.freecourse  .carousel-control-prev {
+    left: -75px;
+}
+.freecourse  .carousel-control-next {
+    right: -75px;
+}
+
+.video-title h2{
+    font-weight: bold;
+    color:#676767;
+    margin:0px;
+}
+.freecourse .blog .col-4{
+    padding: 0px 5px;
+}
+.freecourse  .col-4 a img{
+    max-width: 100%;
+}
+.freecourse  .col-4 a{
+    position: relative;
+    display: inline-block;
+}
+.freecourse  .date{
+    margin: 10px 0px;
+}
+.minivideo-title{
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.blur-time{
+    position: absolute;
+    bottom:0px;
+    width:100%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-right: 30px;
+}
+.freecourse .carousel-inner .row{
+    margin:0px;
+}
+.rating{
+    width: 100%;
+
+    /* background-color: lightgrey; */
+    padding:20px 5px;
+}
+.rating .col-md-9{
+    padding-top: 15px;
+}
+.rate-word{
+    text-align: center;
+    font-size: 20px;
+    clear: both;
+    font-weight: bold;
+}
+.point{
+    text-align: center;
+    font-size:75px;
+}
+.star-sum{
+    clear: both;
+    display: flex;
+    justify-content: center;
+    margin-bottom:10px;
+}
+fieldset, label { margin: 0; padding: 0; }
+
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star rate Widget *****/
+
+.rate { 
+    border: none;
+    float: left;
+}
+
+.rate > input { display: none; } 
+.rate > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: 'Font Awesome\ 5 Free';
+    display: inline-block;
+    content: "\f005";
+    font-weight: 900;
+}
+
+.rate > .half:before { 
+    content: "\f089";
+    position: absolute;
+}
+
+.rate > label { 
+    color: transparent; 
+    float: right; 
+}
+.star-sum span{
+    font-size: 20px;
+    margin:0px 2.5px;
+}
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rate > input:checked ~ label, /* show gold star when clicked */
+.rate:not(:checked) > label:hover, /* hover current star */
+.rate:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rate > input:checked + label:hover, /* hover current star when changing rate */
+.rate > input:checked ~ label:hover,
+.rate > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rate > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+/*RAte bar*/
+.bar-container{
+    background-color: lightgrey;
+    
+}
+.side {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 15px;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+/* Individual bars */
+.bar-5 {width: 85%; height: 18px; background-color: #ff5f67;}
+.bar-4 {width: 45%; height: 18px; background-color: #ff67ff;}
+.bar-3 {width: 25%; height: 18px; background-color: #ff67ff;}
+.bar-2 {width: 15%; height: 18px; background-color: #3333ff;}
+.bar-1 {width: 5%; height: 18px; background-color: #9dc7ff;}
+
+.checked{
+    color:#FFD700;
+}
+.comment{
+    margin-top: 50px;
+}
+.comment-rate{
+    display: flex;
+    justify-content: center;
+}
+.comment-rate .rate > label:before { 
+
+    font-size: 2.25em;
+
+
+}
+
+.comment-rate .rate > label { 
+    color: lightgray; 
+    float: right; 
+}
+.cmt textarea{
+    padding: 20px;
+    width: 100%;
+    resize: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.comment .btn{
+    background-color: #3333ff;
+    height: 50px;
+    width: 190px;
+    color:white;
+    padding-top:12px;
+    margin-top:20px;
+    
+
+}
+.user-cmt{
+    margin-top:75px;
+}
+.othercmt{
+    margin-top:70px;
+}
+.othercmt hr{
+    border: 0.5px solid lightgrey;
+    background-color: lightgray;
+}
+.user-avatar{
+    height: 85px;
+    width:85px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-avatar img{
+    width: 100%;
+
+}
+.cmt-content{
+    font-size: 12px;
+    word-break: break-word;
+}
+.cmt-rate, .cmt-date{
+    font-size: 12px;
+    color:#676767;
+}
+.date-rate-report button{
+    width: 75px;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+    float: right;
+ 
+
+}
+.date-rate-report{
+    margin-bottom:20px;
+}
+.user-name{
+    font-weight: bold;
+}
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}

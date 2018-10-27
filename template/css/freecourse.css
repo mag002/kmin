@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+
+#freecourse-filter{
+    position: sticky;
+    top: 80px;
+    background: #fff;
+    z-index: 10;
+}
+
+#freecourse-banner{
+    margin-top: 80px;
+}
+
+#freecourse-banner .cover{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#freecourse-banner .overlay{
+    width: 100%;
+    height: 350px;
+    background: rgba(0,0,0,0.6);
+}
+
+#freecourse-banner .info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 50px 80px;
+}
+
+#freecourse-banner .info span{
+    font-size: 50px;
+}
+
+#freecourse-banner .info p{
+    display: block;
+    width: 800px;
+    margin: 40px;
+    text-align: justify;
+}
+
+
+/* Hide the browser's default checkbox */
+.checkbox-contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: 0.1s ease-in;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-contain:hover input ~ .checkmark {
+    background-color: rgb(243, 33, 79);
+    border-color: rgb(243, 33, 79);
+    transition: 0.1s ease-in;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-contain input:checked ~ .checkmark {
+    background-color: rgb(243, 33, 79);
+    border-color: rgb(243, 33, 79);
+    transition: 0.1s ease-in;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-contain input:checked ~ .checkmark:after {
+    display: inline-block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-contain .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-contain p{
+    display: inline-block;
+    margin-left: 20px;
+    transform: translateY(-2px);
+}
+
+.filter{
+
+    font-size: 25px;
+    color: rgb(97, 97, 97);
+}
+
+.filter-containter{
+    padding: 40px 0 20px 0;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 15px -10px rgba(0,0,0,0.3);
+}
+
+.filter-containter button{
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+.filter-containter button i{
+    font-size: 30px;
+    transform: translateY(-7px);
+    background: -webkit-linear-gradient(rgb(255, 29, 29),  rgb(255, 29, 104));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.filter-containter input{
+    width: 80%;
+    transform: translateY(-10px);
+    border: none;
+}
+
+#freecourse-courses{
+}
+
+.course-container{
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 1px rgba(0,0,0,0.2);
+    transition: .2s;
+}
+
+.course-container:hover{
+    box-shadow: 0 5px 15px -1px rgba(0,0,0,0.4);
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.course-container .cover{
+    width: 100%;
+    height: 100px;
+    background: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.course-container .content{
+    padding: 10px;
+}
+
+.course-container span{
+    display: block;
+    padding: 10px 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.course-container p{
+    display: block;
+    padding: 0 0 20px 0;
+    display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+    font-size: 13px;
+    color: rgb(75, 75, 75);
+}
+.fa-star{
+    color: rgb(255, 209, 57);
+}
+.fa-eye{
+    color: rgb(250, 71, 155);
+}
+.fa-comment{
+    color: rgb(71, 163, 250);
+}
+
+#freecourse-pages{
+    margin-top: 100px;
+}
+
+#freecourse-pages a{
+    display: inline-block;
+    width: 40px;
+    padding: 8px 0;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+#freecourse-pages a.active{
+    box-shadow: 0 8px 5px -6px rgb(255, 115, 192);
+    color: rgb(255, 106, 163);
+}
