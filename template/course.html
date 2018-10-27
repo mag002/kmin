@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Tuan's Library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/awesome.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom_reponsive.css">
+    <!-- -------------------------------------------------------- -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/course.css">
+</head>
+
+<body>
+    <script>
+        window.onscroll = function(){
+            var sc = document.getElementById("scroll");
+            var he = document.getElementById("course-info");
+            var blank = document.getElementById("blank");
+            var box = blank.getBoundingClientRect();
+            var body = document.body.getBoundingClientRect();
+
+            if(box.top <= 700){
+                he.style.position = "absolute";
+                he.style.marginTop = box.top - body.top - 700 + "px";
+            }
+            else{
+                he.style.position = "fixed";
+                he.style.marginTop = ""; 
+            }
+            
+        }
+    </script>
+    <div class="loader">
+        <div class="mid">
+            <img class="imgload" src="img/pageLoader.gif" alt="">
+            <!-- <img src="img/pageLoader.gif" alt=""> -->
+        </div>
+    </div>
+    <section id="header" class="fixed-top">
+        <div class="desktop_menu d-none d-lg-block">
+            <div class="container-fluid" style="padding-left: 70px">
+                <div class="row w-100">
+                    <div class="col-3 py-2">
+                        <img class="logo" src="img/KminLogo.png" alt="">
+                    </div>
+                    <div class="col-9 text-right my-auto">
+                        <nav class="d-inline-block">
+                            <ul class="main_menu">
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lớp học <i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Tư duy và kỹ năng lập trình</a></li>
+                                        <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                                        <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Đăng ký</a></li>
+                                
+                                <li><a href="#">Tài liệu</a></li>
+                                <li><a href="#">Showroom</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Học free</a></li>
+                                <li><a href="#">Online test</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tablet_menu d-block d-lg-none">
+            <div class="container">
+                <div class="row py-2">
+                    <div class="col-4"></div>
+                    <div class="col-4 text-center">
+                        <img class="logo" src="img/KminLogo.png" alt="">
+                    </div>
+                    <div class="col-4 text-right">
+                        <div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mobile_nav">
+                    <ul class="main_menu">
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Lớp học <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Tư duy và kỹ năng lập trình</a></li>
+                                <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                                <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Đăng ký</a></li>
+                        <li><a href="#">Tài liệu</a></li>
+                        <li><a href="#">Showroom</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Học free</a></li>
+                        <li><a href="#">Online test</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END-HEADER -->
+    <section id="course-info">
+        <div class="course-info-panel">
+            <div class="container-fluid">
+                <div class="row" style="margin: 10px 0">
+                    <div class="col-sm-12">
+                        <h4 class="text-center">Thông tin khóa mới nhất</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2 text-center timer">
+                        <span class="day d">7</span><br><span class="label">ngày</span>
+                    </div>
+                    <div class="col-sm-2 text-center timer">
+                        <span class="d">14</span><br><span class="label">giờ</span>
+                    </div>
+                    <div class="col-sm-2 text-center timer">
+                        <span class="d">40</span><br><span class="label">phút</span>
+                    </div>
+                    <div class="col-sm-2 text-center timer">
+                        <span class="d">32</span><br><span class="label">giây</span>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row" style="margin-top: 20px">
+                    <div class="col-sm-12 full-content-panel">
+                        <p id="scroll">1.123.456 VND</p>
+                        <span>Nhanh tay đăng ký</span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px">
+                    <div class="col-sm-12  text-center">
+                        <a class="course-info-checkout" href="#">Đăng ký khóa</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Lịch học: </p>
+                        <p>Thời lượng:</p>
+                        <p>Địa điểm:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="banner">
+        <div class="banner_bg" style="background: url('img/banner.jpg') no-repeat; background-size: cover; height: 400px">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-8 my-auto">
+                        <div class="banner_content">
+                            <h2>TƯ DUY VÀ KỸ NĂNG LẬP TRÌNH</h2>
+                            <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repudiandae voluptatibus similique sit id iste ipsa porro corporis excepturi repellat magni impedit delectus, numquam distinctio aperiam error omnis. Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repudiandae voluptatibus similique sit id iste ipsa porro corporis excepturi repellat magni impedit delectus, numquam distinctio aperiam error omnis. Tempore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END-BANNER -->
+    <section id="gioithieu">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="text-center">Giới thiệu khóa học</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repudiandae voluptatibus similique sit id iste ipsa porro corporis excepturi repellat magni impedit delectus, numquam distinctio aperiam error omnis. Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repudiandae voluptatibus similique sit id iste ipsa porro corporis excepturi repellat magni impedit delectus, numquam distinctio aperiam error omnis. Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repudiandae voluptatibus similique sit id iste ipsa porro corporis excepturi repellat magni impedit delectus, numquam distinctio aperiam error omnis. Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repudiandae voluptatibus similique sit id iste ipsa porro corporis excepturi repellat magni impedit delectus, numquam distinctio aperiam error omnis. Tempore.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END-GIOITHIEU -->
+    <section id="kienthuc">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="text-center">Học xong lớp này, bạn sẽ được...</h3>
+                    <div class="row py-4">
+                        <div class="col-md-6 text-center">
+                            <div class="circle circle1"><p class="text-center"><span> Kiến thức</span></p></div>
+                            <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aperiam modi nam quas autem ab, ad accusamus natus placeat temporibus facilis quos distinctio veritatis ducimus deserunt. Mollitia dicta ea fugiat.</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="circle circle2"><p class="text-center"><span> Kiến thức</span></p></div>
+                            <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aperiam modi nam quas autem ab, ad accusamus natus placeat temporibus facilis quos distinctio veritatis ducimus deserunt. Mollitia dicta ea fugiat.</p>
+                        </div>
+                    </div>
+                    <div class="row py-4">
+                        <div class="col-md-6 text-center">
+                            <div class="circle circle3"><p class="text-center"><span> Kiến thức</span></p></div>
+                            <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aperiam modi nam quas autem ab, ad accusamus natus placeat temporibus facilis quos distinctio veritatis ducimus deserunt. Mollitia dicta ea fugiat.</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="circle circle4"><p class="text-center"><span> Kiến thức</span></p></div>
+                            <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aperiam modi nam quas autem ab, ad accusamus natus placeat temporibus facilis quos distinctio veritatis ducimus deserunt. Mollitia dicta ea fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END-KIENTHUC -->
+    <section id="decuong">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="text-center py-3">Đề cương</h3>
+                    <div class="item_left">
+                        <div class="row" style="margin-top: 40px">
+                            <div class="col-2">
+                                <div class="circle left text-center">1</div>
+                            </div> 
+                            <div class="col-10 my-auto py-2">
+                                <h4>Lorem abc xyz</h4>
+                                <div class="toggle_content py-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="item_right">
+                        <div class="row">
+                            <div class="col-10 my-auto py-2">
+                                <h4>Lorem abc xyz</h4>
+                                <div class="toggle_content py-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                </div>
+                            </div> 
+                            <div class="col-2">
+                                <div class="circle right text-center">2</div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item_left">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="circle left text-center">3</div>
+                            </div> 
+                            <div class="col-10 my-auto py-2">
+                                <h4>Lorem abc xyz</h4>
+                                <div class="toggle_content py-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="item_right">
+                        <div class="row">
+                            <div class="col-10 my-auto py-2">
+                                <h4>Lorem abc xyz</h4>
+                                <div class="toggle_content py-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                </div>
+                            </div> 
+                            <div class="col-2">
+                                <div class="circle right text-center">4</div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item_left">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="circle left text-center">5</div>
+                            </div> 
+                            <div class="col-10 my-auto py-2">
+                                <h4>Lorem abc xyz</h4>
+                                <div class="toggle_content py-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique quas perferendis! Officia, atque, fuga. Repellat ipsum error eius dolor pariatur vel ipsam illo, delectus obcaecati ducimus, un
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="blank"></div>
+    <!-- END-DECUONG -->
+<!-- <section id="project_demo">
+<div class="container">
+<div class="row">
+<div class="col-8">
+<h3>Demo một số project trong khóa học</h3>
+<div class="row bakhoi">
+<div class="col-4 pr-1"><iframe width="560" height="315" src="https://www.youtube.com/embed/R43xOUlRHWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="col-4 px-1"><iframe width="560" height="315" src="https://www.youtube.com/embed/R43xOUlRHWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="col-4 pl-1"><iframe width="560" height="315" src="https://www.youtube.com/embed/R43xOUlRHWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</div>
+<div class="row haikhoi">
+<div class="col-6 pr-1"><iframe width="560" height="315" src="https://www.youtube.com/embed/R43xOUlRHWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="col-6 pl-1"><iframe width="560" height="315" src="https://www.youtube.com/embed/R43xOUlRHWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</section> -->
+<!-- END PROJECTDEMO -->
+<section id="giangvien">
+    <div class="container">
+        <h3 class="text-center">Đội ngũ giảng viên</h3>
+        <div class="row">
+            <div class="col-md-4 text-center item">
+                <img class="rounded-circle" src="img/banner.jpg" alt="">
+                <p class="title">Trợ giảng</p>
+                <p class="fullname">Trương Minh Ánh</p>
+                <div class="info">
+                    <div class="right" style="background: url(img/right.png) no-repeat; background-size:cover;"></div>
+                    <div class="more_info px-2 py-3 text-left">
+                        <h5>Trương Minh Ánh Tuyết</h5>
+                        <p><span class="badge badge-danger">SOFTWARE ENGINEER</span></p>
+                        <ul class="d-block px-3">
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <hr>
+                        <p class="px-3 trietlysong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4 text-center item">
+                <img class="rounded-circle" src="img/banner.jpg" alt="">
+                <p class="title">Trợ giảng</p>
+                <p class="fullname">Trương Minh Ánh</p>
+                <div class="info">
+                    <div class="right" style="background: url(img/right.png) no-repeat; background-size:cover;"></div>
+                    <div class="more_info px-2 py-3 text-left">
+                        <h5>Trương Minh Ánh Tuyết</h5>
+                        <p><span class="badge badge-danger">SOFTWARE ENGINEER</span></p>
+                        <ul class="d-block px-3">
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <hr>
+                        <p class="px-3 trietlysong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4 text-center item">
+                <img class="rounded-circle" src="img/banner.jpg" alt="">
+                <p class="title">Trợ giảng</p>
+                <p class="fullname">Trương Minh Ánh</p>
+                <div class="info final">
+                    <div class="left" style="background: url(img/left.png) no-repeat; background-size:cover;"></div>
+                    <div class="more_info px-2 py-3 text-left">
+                        <h5>Trương Minh Ánh Tuyết</h5>
+                        <p><span class="badge badge-danger">SOFTWARE ENGINEER</span></p>
+                        <ul class="d-block px-3">
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <hr>
+                        <p class="px-3 trietlysong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END GIANGVIEN -->
+<section id="sapkhaigiang">
+    <div class="container">
+        <h3 class="text-center title_khoahoc">CÁC KHÓA SẮP KHAI GIẢNG</h3>
+        <div class="ba_icon">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="text-center icon"><i class="fas fa-calendar-alt"></i></p>
+                            <p class="text-center name">Lịch học<br>Tự chọn</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="text-center icon"><i class="far fa-clock"></i></p>
+                            <p class="text-center name">Lịch học<br>Tự chọn</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="text-center icon"><i class="fas fa-map-marker-alt"></i></i></p>
+                            <p class="text-center name">Lịch học<br>Tự chọn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <h5 class="text-center title_uudai">Thời gian ưu đãi</h5>
+        <div class="timer d-flex align-items-center justify-content-center">
+            <div class="text-center"><span class="day d">7</span><br><span class="label">ngày</span></div>
+            <div class="text-center"><span class="hh d">14</span><br><span class="label">giờ</span></div>
+            <div class="text-center"><span class="mm d">14</span><br><span class="label">phút</span></div>
+            <div class="text-center"><span class="ss d">14</span><br><span class="label">giây</span></div>
+        </div>
+        <div class="row bakhoi_khoahoc">
+            <div class="col-lg-4 px-5">
+                <div class="item">
+                    <h4>Tư duy và kỹ năng lập trình 11</h4>
+                    <p class="tengiangvien">Cô Nguyễn Thị Ngọc & Trợ giảng</p>
+                    <p class="ngaykhaigiang">Khai giảng: 09/04/2018</p>
+                    <div class="price price1">
+                        <p class="giathat text-right">6.000.000</p>
+                        <p class="giahientai text-center">4.992.212</p>
+                    </div>
+                    <div class="text-center dangky"><button class="btn btn-outline-primary btn_dangky">Đăng ký khóa học</button></div>
+                    <p class="note">*Ưu đãi chỉ được áp dụng cho HSSV</p>
+                </div>
+            </div>
+            <div class="col-lg-4 px-5">
+                <div class="item">
+                    <h4>Tư duy và kỹ năng lập trình 11</h4>
+                    <p class="tengiangvien">Cô Nguyễn Thị Ngọc & Trợ giảng</p>
+                    <p class="ngaykhaigiang">Khai giảng: 09/04/2018</p>
+                    <div class="price price2">
+                        <p class="giathat text-right">6.000.000</p>
+                        <p class="giahientai text-center">4.992.212</p>
+                    </div>
+                    <div class="text-center dangky"><button class="btn btn-outline-primary btn_dangky">Đăng ký khóa học</button></div>
+                    <p class="note">*Ưu đãi chỉ được áp dụng cho HSSV</p>
+                </div>
+            </div>
+            <div class="col-lg-4 px-5">
+                <div class="item">
+                    <h4>Tư duy và kỹ năng lập trình 11</h4>
+                    <p class="tengiangvien">Cô Nguyễn Thị Ngọc & Trợ giảng</p>
+                    <p class="ngaykhaigiang">Khai giảng: 09/04/2018</p>
+                    <div class="price price3">
+                        <p class="giathat text-right">6.000.000</p>
+                        <p class="giahientai text-center">4.992.212</p>
+                    </div>
+                    <div class="text-center dangky"><button class="btn btn-outline-primary btn_dangky">Đăng ký khóa học</button></div>
+                    <p class="note">*Ưu đãi chỉ được áp dụng cho HSSV</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SAP KHAI GIANG-->
+<section id="camnhan">
+    <h5 class="text-center">Cảm nhận của học viên sau khóa học</h5>
+    <div class="container">
+        <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <p class="hinhdaidien text-center"><img class="rounded-circle" src="img/banner.jpg" alt=""></p>
+                        <p class="ten text-center">Ngọc Ngọc</p>
+                        <p class="comment text-center">Học ở đây vui ghê</p>
+                    </div>
+                    <div class="owl-item">
+                        <p class="hinhdaidien text-center"><img class="rounded-circle" src="img/banner.jpg" alt=""></p>
+                        <p class="ten text-center">Bảo Bảo</p>
+                        <p class="comment text-center">Học ở đây quá vui</p>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav">
+                <div class="owl-prev"><i class="fas fa-angle-left"></i></div>
+                <div class="owl-next"><i class="fas fa-angle-right"></i></div>
+                <div class="line"></div><i class="fas fa-quote-left icon_quote"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CAM NHAN -->
+<!-- <section id="khoahoc_lienquan">
+    <h5 class="text-center">Các khóa học liên quan</h5>
+    <div class="container">
+        <div class="owl-carousel-1 owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <div class="item">
+                            <h3>LẬP TRÌNH WEB FRONT-END</h3>
+                            <div class="hinh"><img src="img/banner.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <h3>LẬP TRÌNH WEB FRONT-END</h3>
+                            <div class="hinh"><img src="img/banner.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav">
+                <div class="owl-prev1"><i class="fas fa-angle-left"></i></div>
+                <div class="owl-next1"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section id="footer">
+    <div class="container">
+        <div class="title d-flex py-5">
+            <img class="logo" src="img/KminLogo.png" alt="">
+            <h2>HỌC VIỆN KHOA HỌC MÁY TÍNH KMIN</h2>
+        </div>
+        <div class="row bakhoi">
+            <div class="col-md-3 khoi1">
+                <h5><a href="#">Các khóa học sắp khai giảng</a></h5>
+                <p class="ml-1"><a href="#">Tư duy và kỹ năng lập trình 11</a></p>
+                <p class="ml-1"><a href="#">Tư duy và kỹ năng lập trình 11</a></p>
+                <p class="ml-1"><a href="#">Tư duy và kỹ năng lập trình 11</a></p>
+            </div>
+            <div class="col-md-5 khoi2">
+                <h5 class="chiase"><a href="#">Chia sẽ tài liệu</a></h5>
+                <a href="#">
+                    <div class="row tin1">
+                        <div class="col-4">
+                            <img class="img-tailieu" src="img/banner.jpg" alt="">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="title">Lập trình C++ căn bản</h5>
+                            <p class="date_container"><span>Học viện Kmin</span><span class="date"> - 01/01/2018</span></p>
+                        </div>
+
+                    </div>
+                </a>
+                <div class="line"></div>
+                <a href="#">
+                    <div class="row tin2">
+                        <div class="col-4">
+                            <img class="img-tailieu" src="img/banner.jpg" alt="">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="title">Lập trình C++ căn bản</h5>
+                            <p class="date_container"><span>Học viện Kmin</span><span class="date"> - 01/01/2018</span></p>
+                        </div>   
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 px-4 khoi3">
+                <h5 class="title1 mb-4"><a href="#">Liên hệ</a></h5>
+                <p class="pl-5"><i class="fab fa-facebook-square"></i><a href="#">fb.com/hocvienkmin</a></p>
+                <p class="pl-5"><i class="fas fa-globe-asia"></i><a href="#">kmin.edu VND</a></p>
+                <p class="pl-5"><i class="fas fa-phone-volume"></i><a href="tel:01684004298">0168 4004 298</a></p>
+                <p class="pl-5"><i class="fab fa-youtube"></i><a href="#">www.youtube.com</a></p>
+                <h5 class="title2 mb-4"><a href="#">Địa chỉ</a></h5>
+                <p class="pl-5"><i class="fas fa-map-marked-alt"></i><a href="#">(Cơ sở 1) 368/29 Lê Hồng Phong,p.1,q.10</a></p>
+                <p class="pl-5"><i class="fas fa-map-marked-alt"></i><a href="#">(Cơ sở 1) 368/29 Lê Hồng Phong,p.1,q.10</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<!-- Tuan's Library -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/Popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<!-- Custom -->
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    $(window).on('load', function(){
+        $(".loader").fadeOut("slow");
+    });
+</script>
+</html>

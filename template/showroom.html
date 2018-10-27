@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+       
+         <!-- Tuan's Library -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/awesome.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/dist/hamburgers.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.css">
+        <!-- Custom -->
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/custom_reponsive.css">
+        <!-- -------------------------------------------------------- -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/course.css">
+        <!-------------------   Phuc   ----------------------------------->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/showroom.css">
+        
+    </head>
+    <body>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
+
+         <!--
+            
+            HEADER
+        
+        
+        --> 
+
+        <div class="loader">
+            <div class="mid">
+                <img class="imgload" src="img/pageLoader.gif" alt="">
+                <!-- <img src="img/pageLoader.gif" alt=""> -->
+            </div>
+        </div>
+        <section id="header" class="fixed-top">
+            <div class="desktop_menu d-none d-lg-block">
+                <div class="container-fluid" style="padding-left: 70px">
+                    <div class="row w-100">
+                        <div class="col-3 py-2">
+                            <img class="logo" src="img/KminLogo.png" alt="">
+                        </div>
+                        <div class="col-9 text-right my-auto">
+                            <nav class="d-inline-block">
+                                <ul class="main_menu">
+                                    <li>
+                                        <a href="#">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lớp học <i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">Tư duy và kỹ năng lập trình</a></li>
+                                            <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                                            <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Đăng ký</a></li>
+                                    
+                                    <li><a href="#">Tài liệu</a></li>
+                                    <li><a href="#">Showroom</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Học free</a></li>
+                                    <li><a href="#">Online test</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet_menu d-block d-lg-none">
+                <div class="container">
+                    <div class="row py-2">
+                        <div class="col-4"></div>
+                        <div class="col-4 text-center">
+                            <img class="logo" src="img/KminLogo.png" alt="">
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="mobile_nav">
+                        <ul class="main_menu">
+                            <li>
+                                <a href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="#">Lớp học <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">Tư duy và kỹ năng lập trình</a></li>
+                                    <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                                    <li><a href="#">Làm chủ các ngôn ngữ lập trình</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Đăng ký</a></li>
+                            <li><a href="#">Tài liệu</a></li>
+                            <li><a href="#">Showroom</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Học free</a></li>
+                            <li><a href="#">Online test</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    
+        <!--
+            
+            HEADER
+        
+        
+        --> 
+       
+        <div class="showroom">
+            
+            <div class="showroom-video">
+                   
+                <div id="carouselExampleControls" class="carousel background"  data-interval="false" data-ride="carousel">
+                    <div class="carousel-inner">
+                        
+                        {{ with $n := index . 0 }}
+                        <div class="carousel-item active">
+                        
+                        
+                          
+                                <div class="video">
+                                    <div class="video-title">
+                                        <h2>Lorem ipsum</h2>
+                                        <span class="date">01/01/2018</span>
+                                        <span class="user">by Người lạ ơi</span>
+                                    </div>
+                                    <div class="video-youtube">
+                                        <iframe
+                                        src={{ $n.Link }}></iframe>
+                                       
+                                    </div>
+                                </div>
+                                
+                        </div>
+                        {{ end }}
+                        {{ with $n := index . 1 }}
+                        <div class="carousel-item">
+                            <div class="video">
+                                <div class="video-title">
+                                    <h2>Lorem ipsum</h2>
+                                    <span class="date">01/01/2018</span>
+                                    <span class="user">by Người lạ ơi</span>
+                                </div>
+                                <div class="video-youtube">
+                                    <iframe 
+                                    src={{ $n.Link }}>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with $n := index . 2 }}
+                        <div class="carousel-item">
+                            <div class="video">
+                                <div class="video-title">
+                                    <h2>Lorem ipsum</h2>
+                                    <span class="date">01/01/2018</span>
+                                    <span class="user">by Người lạ ơi</span>
+                                </div>
+                                <div class="video-youtube">
+                                    <iframe 
+                                    src={{ $n.Link }}>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        {{end}}
+                    </div>
+                
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class=" fas fa-chevron-left" aria-hidden="true"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class=" fas fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="fade-out"></div>
+            </div>
+           
+                <div class="showroom-catalog">
+                    <h2>Lorem Ipsum</h2>
+                    <div class="row blog">
+                            <div class="col-12">
+                                <div id="blogCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            
+                                    <div class="carousel-indicators">
+                                        <span data-target="#blogCarousel" data-slide-to="0" class="active"></span>
+                                        <span data-target="#blogCarousel" data-slide-to="1"></span>
+                                    </div>
+            
+                                    <!-- Carousel items -->
+                                    <div class="container">
+                                        <div class="carousel-inner">
+                                        
+                                            <div class="carousel-item active">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                </div>
+                                                <!--.row-->
+                                            </div>
+                                            <!--.item-->
+                                        
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                       <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                       <a href="#">
+                                                            <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                            <div class="blur-time">
+                                                                00:39
+                                                            </div>
+                                                        </a>
+                                                        <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                        <div class="date">01/01/2018</div>
+                                                        <div class="user m-0">by Người lạ ơi</div>
+                                                    </div>
+                                                </div>
+                                                <!--.row-->
+                                            </div>
+                                            <!--.item-->
+                                        
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#blogCarousel" role="button" data-slide="prev">
+                                    
+                                            <i class=" fas fa-chevron-left" aria-hidden="true"></i>
+                                           
+                                    </a>
+                                    <a class="carousel-control-next" href="#blogCarousel" role="button" data-slide="next">
+                                        <i class=" fas fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                    <!--.carousel-inner-->
+                                </div>
+                            
+                                <!--.Carousel-->
+            
+                            </div>
+                        </div>
+                </div>
+                <div class="showroom-catalog">
+                        <h2>Lorem Ipsum</h2>
+                        <div class="row blog">
+                                <div class="col-12">
+                                    <div id="blogCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+                
+                                        <div class="carousel-indicators">
+                                            <span data-target="#blogCarousel" data-slide-to="0" class="active"></span>
+                                            <span data-target="#blogCarousel" data-slide-to="1"></span>
+                                        </div>
+                
+                                        <!-- Carousel items -->
+                                        <div class="container">
+                                            <div class="carousel-inner">
+                                            
+                                                <div class="carousel-item active">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                    </div>
+                                                    <!--.row-->
+                                                </div>
+                                                <!--.item-->
+                                            
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                           <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                           <a href="#">
+                                                                <img src="img/pexels-photo-267885.jpeg" alt="Image"  >
+                                                                <div class="blur-time">
+                                                                    00:39
+                                                                </div>
+                                                            </a>
+                                                            <div class="minivideo-title">Lorem Ipsum is simply </div>
+                                                            <div class="date">01/01/2018</div>
+                                                            <div class="user m-0">by Người lạ ơi</div>
+                                                        </div>
+                                                    </div>
+                                                    <!--.row-->
+                                                </div>
+                                                <!--.item-->
+                                            
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#blogCarousel2" role="button" data-slide="prev">
+                                        
+                                                <i class=" fas fa-chevron-left" aria-hidden="true"></i>
+                                               
+                                        </a>
+                                        <a class="carousel-control-next" href="#blogCarousel2" role="button" data-slide="next">
+                                            <i class=" fas fa-chevron-right" aria-hidden="true"></i>
+                                        </a>
+                                        <!--.carousel-inner-->
+                                    </div>
+                                
+                                    <!--.Carousel-->
+                
+                                </div>
+                        </div>
+                </div>
+           
+        </div>
+                             
+       
+       
+
+                        
+           
+  
+
+        <!--
+            
+            FOOTER
+        
+        
+        -->    
+
+        <section id="footer">
+            <div class="container">
+                <div class="title d-flex py-5">
+                    <img class="logo" src="img/KminLogo.png" alt="">
+                    <h2>HỌC VIỆN KHOA HỌC MÁY TÍNH KMIN</h2>
+                </div>
+                <div class="row bakhoi">
+                    <div class="col-md-3 khoi1">
+                        <h5><a href="#">Các khóa học sắp khai giảng</a></h5>
+                        <p class="ml-1"><a href="#">Tư duy và kỹ năng lập trình 11</a></p>
+                        <p class="ml-1"><a href="#">Tư duy và kỹ năng lập trình 11</a></p>
+                        <p class="ml-1"><a href="#">Tư duy và kỹ năng lập trình 11</a></p>
+                    </div>
+                    <div class="col-md-5 khoi2">
+                        <h5 class="chiase"><a href="#">Chia sẽ tài liệu</a></h5>
+                        <a href="#">
+                            <div class="row tin1">
+                                <div class="col-4">
+                                    <img class="img-tailieu" src="img/banner.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h5 class="title">Lập trình C++ căn bản</h5>
+                                    <p class="date_container"><span>Học viện Kmin</span><span class="date"> - 01/01/2018</span></p>
+                                </div>
+        
+                            </div>
+                        </a>
+                        <div class="line"></div>
+                        <a href="#">
+                            <div class="row tin2">
+                                <div class="col-4">
+                                    <img class="img-tailieu" src="img/banner.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h5 class="title">Lập trình C++ căn bản</h5>
+                                    <p class="date_container"><span>Học viện Kmin</span><span class="date"> - 01/01/2018</span></p>
+                                </div>   
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-4 khoi3">
+                        <h5 class="title1 mb-4"><a href="#">Liên hệ</a></h5>
+                        <p class="pl-5"><i class="fab fa-facebook-square"></i><a href="#">fb.com/hocvienkmin</a></p>
+                        <p class="pl-5"><i class="fas fa-globe-asia"></i><a href="#">kmin.edu.vn</a></p>
+                        <p class="pl-5"><i class="fas fa-phone-volume"></i><a href="tel:01684004298">0168 4004 298</a></p>
+                        <p class="pl-5"><i class="fab fa-youtube"></i><a href="#">www.youtube.com</a></p>
+                        <h5 class="title2 mb-4"><a href="#">Địa chỉ</a></h5>
+                        <p class="pl-5"><i class="fas fa-map-marked-alt"></i><a href="#">(Cơ sở 1) 368/29 Lê Hồng Phong,p.1,q.10</a></p>
+                        <p class="pl-5"><i class="fas fa-map-marked-alt"></i><a href="#">(Cơ sở 1) 368/29 Lê Hồng Phong,p.1,q.10</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+            
+            FOOTER
+        
+        
+        -->    
+        <!-- Tuan's Library -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/Popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Custom -->
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+            $(window).on('load', function(){
+                $(".loader").fadeOut("slow");
+            });
+        </script>
+
+
+
+    </body>
+</html>
